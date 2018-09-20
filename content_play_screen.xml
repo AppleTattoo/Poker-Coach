@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alex_.pokercoach.PlayScreen"
+    tools:showIn="@layout/activity_play_screen">
+
+    <ImageButton
+        android:id="@+id/imageButtonC1"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonC2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backofcard" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC2"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonC5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonC1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backofcard" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC3"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonC4"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonC5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backofcard" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC4"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonC3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backofcard" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC5"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonC3"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonC2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backofcard" />
+
+    <TextView
+        android:id="@+id/tvCurrentHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Touch a card to draw"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Community Cards"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Your Hand"
+        android:textColor="@color/White"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonC5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonC5" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC6"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="182dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonC7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/backofcard" />
+
+    <ImageButton
+        android:id="@+id/imageButtonC7"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonC6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonC6"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonC6"
+        app:srcCompat="@drawable/backofcard" />
+
+    <Button
+        android:id="@+id/buttonCardTouch1"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="310dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch2"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch5"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="0dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch3"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="155dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch4"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="300dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch6"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="115dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonCardTouch7"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="190dp"
+        android:layout_marginLeft="300dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</android.support.constraint.ConstraintLayout>
